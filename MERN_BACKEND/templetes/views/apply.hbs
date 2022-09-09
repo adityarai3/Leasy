@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+</head>
+<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+		background: url(end1.jpeg);
+		background-repeat: no-repeat;
+		background-size: 1668px 647px;
+		color: white;
+
+	}
+	.box{
+		border:4px solid black;
+		margin: 116px 320px;
+		padding: 22px;
+		width: 40%;
+		border-radius: 25px;
+		background-color: transparent;
+		box-shadow: 5px 10px black;
+	}
+	.formgroup input {
+		border:2px solid black;
+		text-align: center;
+		display: block;
+		width: 450px;
+		margin: 2px auto;
+		padding: 1px;
+		border-radius: 8px;
+	}
+	.box button
+	{
+		display: block;
+		width: 88%;
+		margin: 15px auto;
+		border-radius: 8px;
+		background-color: #ffcc3e;
+		cursor: pointer;
+	}
+	.box h1
+	{
+		text-align: center;
+		color: #ffcc3e;
+		font-family: 'Quintessential', cursive
+	}
+	::placeholder 
+	{ 
+  color: black;
+  
+
+    }
+</style>
+<body>
+	<div class="box">
+		<h1>Application Form</h1>
+    <form action="/apply" method="POST">
+			<div class="formgroup">
+				<input type="text" name="name" placeholder="Enter your Name" required>
+				<input type="date" name="date" placeholder="Enter your D.O.B" required>
+				<input type="text" name="mobile" placeholder="Enter your Mobile Number" required>
+                <input type="text" name="address" placeholder="Enter your Address" required>
+				<input type="text" name="adhaar" placeholder="Enter your Adhaar Number" required>
+				<input type="text" name="jobprofile" placeholder="Job Profile" required>
+				<input type="text" name="salary" placeholder="Salary required Per Day" required>
+
+			</div>
+			<button class="btn">SUBMIT</button>
+		</form>
+		</div>
+</body>
+</html>
